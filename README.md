@@ -56,8 +56,14 @@ $ yarn
 $ npm link
 # currentパスへシンボリックリンクを作成します
 $ npm link lighthouse-plugin-example
-# 
-$ lighthouse_plugin ls node_modules | grep lighthouse-plugin-example
+
+# lighthouseコマンドで計測してみる
+$ npx lighthouse https://blog.isystk.com --plugins=lighthouse-plugin-example --view 
+
+# Express経由で計測結果を取得する
+$ yarn start
+$ curl "http://localhost:3000/lighthouse?url=https://blog.isystk.com" > ./result.output 
+
 ```
 
 ## 🎨 参考
