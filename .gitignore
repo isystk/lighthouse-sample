@@ -1,0 +1,9 @@
+.DS_Store
+.history
+*.log
+!.gitkeep
+
+node_modules
+
+*.html
+
